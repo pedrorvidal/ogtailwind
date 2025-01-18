@@ -1,0 +1,24 @@
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.iml
+
+# Ignore compiled files
+*.class
+*.exe
+*.o
+
+# Ignore package manager files
+node_modules/
+package-lock.json
+yarn.lock
+
+# Ignore log files
+*.log
+
+# Ignore temp files
+*.tmp
