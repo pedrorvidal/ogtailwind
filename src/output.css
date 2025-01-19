@@ -743,6 +743,10 @@ video {
   grid-template-columns: 1fr 2fr 3fr;
 }
 
+.grid-cols-\[1fr_auto\] {
+  grid-template-columns: 1fr auto;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -753,6 +757,18 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-x-2 {
