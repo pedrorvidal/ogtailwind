@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="./output.css" />
 </head>
 
-<body class="m-8">
-    <div class="flex gap-4">
-        <span class="bg-lime-100 text-lime-800 border-2 border-lime-300 px-5 py-1 rounded-full">Pago</span>
-        <span class="bg-yellow-100 text-yellow-800 border-2 border-yellow-300 px-5 py-1 rounded-full">Processando</span>
-        <span class="bg-blue-100 text-blue-800 border-2 border-blue-300 px-5 py-1 rounded-full">Arquivado</span>
-        <span class="bg-red-100 text-red-800 border-2 border-red-300 px-5 py-1 rounded-full">Erro no pedido</span>
+<body class="bg-verde-800 fonte-sans">
+    <div class="container mt-4 flex justify-center md:justify-start">
+        <div class="inline-flex items-center rounded-md bg-verde-900">
+            <span class="size-2 bg-verde-300 block rounded-full relative -left-1"></span>
+            <div class="flex text-verde-300 divide-x-2 divide-verde-800">
+                <div class="px-4 py-2 capitalize" id="dia">Segunda</div>
+                <div class="px-4 py-2" id="temperatura">25°</div>
+                <div class="px-4 py-2" id="tempo">🌤️</div>
+            </div>
+        </div>
     </div>
 </body>
 
