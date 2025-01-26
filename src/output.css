@@ -810,6 +810,10 @@ video {
   gap: 2rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .divide-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-x-reverse: 0;
   border-right-width: calc(2px * var(--tw-divide-x-reverse));
@@ -1193,6 +1197,11 @@ video {
   transition-duration: 150ms;
 }
 
+.hover\:text-verde-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(145 238 119 / var(--tw-text-opacity, 1));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -1239,6 +1248,18 @@ video {
 @media not all and (min-width: 640px) {
   .max-sm\:mb-4 {
     margin-bottom: 1rem;
+  }
+
+  .max-sm\:flex-col {
+    flex-direction: column;
+  }
+
+  .max-sm\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .max-sm\:gap-4 {
+    gap: 1rem;
   }
 
   .max-sm\:divide-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1326,6 +1347,10 @@ video {
     padding: 2rem;
   }
 
+  .sm\:p-12 {
+    padding: 3rem;
+  }
+
   .sm\:py-1 {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
@@ -1393,6 +1418,10 @@ video {
 
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:justify-self-end {
+    justify-self: end;
   }
 
   .lg\:p-8 {
