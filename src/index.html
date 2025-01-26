@@ -253,6 +253,66 @@
         </div>
     </section>
 
+    <section id="contato" class="gap-8 grid lg:grid-cols-2 mb-12 sm:mb-16 container">
+        <div>
+            <h1 class="mb-4 font-serif text-4xl text-verde-300">
+                Nossos Contatos
+            </h1>
+            <p class="mb-8 text-balance text-gray-200">
+                Tem interesse em passar uma temporada na Forest? Entre em contato com a gente por telefone ou email.
+            </p>
+            <div class="gap-4 grid">
+                <div>
+                    <span class="inline-block bg-verde-400 w-6 h-0.5"></span>
+                    <h2 class="mb-2 font-serif text-2xl text-verde-300">Base</h2>
+                    <p class="text-gray-300">Rua da Mata, 123 - Floresta Nacional - RJ</p>
+                </div>
+
+                <div>
+                    <span class="inline-block bg-verde-400 w-6 h-0.5"></span>
+                    <h2 class="mb-2 font-serif text-2xl text-verde-300">Email</h2>
+                    <p class="text-gray-300">contato@forest.com</p>
+                </div>
+
+                <div>
+                    <span class="inline-block bg-verde-400 w-6 h-0.5"></span>
+                    <h2 class="mb-2 font-serif text-2xl text-verde-300">Telefone</h2>
+                    <p class="text-gray-300">(21) 99999-9999</p>
+                </div>
+            </div>
+        </div>
+        <form action="" class="gap-4 grid bg-verde-900 shadow-2xl p-4 lg:p-8 rounded-xl">
+            <div class="gap-1 grid">
+                <label for="nome" class="text-white">Nome</label>
+                <input type="text"
+                    class="border-2 border-verde-800 bg-verde-800 p-2 rounded-md focus:ring-2 focus:ring-verde-400 text-white placeholder:text-verde-700 focus:outline-none"
+                    placeholder="Seu nome" id="nome" name="nome">
+            </div>
+            <div class="gap-4 grid sm:grid-cols-2">
+                <div class="gap-1 grid">
+                    <label for="email" class="text-white">Email</label>
+                    <input type="email"
+                        class="border-2 border-verde-800 bg-verde-800 p-2 rounded-md focus:ring-2 focus:ring-verde-400 text-white placeholder:text-verde-700 focus:outline-none"
+                        placeholder="E-mail" id="email" name="email">
+                </div>
+                <div class="gap-1 grid">
+                    <label for="telefone" class="text-white">Telefone</label>
+                    <input type="text"
+                        class="border-2 border-verde-800 bg-verde-800 p-2 rounded-md focus:ring-2 focus:ring-verde-400 text-white placeholder:text-verde-700 focus:outline-none"
+                        placeholder="(00) 0 0000-0000" id="telefone" name="telefone">
+                </div>
+            </div>
+
+            <div class="gap-1 grid">
+                <label for="mensagem" class="text-white">Mensagem</label>
+                <textarea type="text"
+                    class="border-2 border-verde-800 bg-verde-800 p-2 rounded-md focus:ring-2 focus:ring-verde-400 text-white placeholder:text-verde-700 focus:outline-none resize-none"
+                    placeholder="Mensagem" id="mensagem" name="mensagem" rows="5""></textarea>
+            </div>
+            <button class="inline-block bg-verde-400 px-4 py-2 rounded-full text-verde-900 place-self-start">Enviar email</button>
+        </form>
+    </section>
+
 </body>
 
 </html>
