@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .neon {
+        @apply border-verde-200 bg-gradient-to-b from-verde-200 to-verde-400 border rounded-full text-verde-900;
+        box-shadow: 0 1px 4px 1px theme(colors.verde.200 / 25%), inset 0px -1px 2px theme(colors.verde.200);
+    }
+
+    .input {
+        @apply border-2 border-verde-800 focus:border-verde-900 bg-verde-800 p-2 rounded-md focus:ring-2 focus:ring-verde-400 text-white focus:outline-none placeholder:text-verde-900;
+    }
+
+    .radial-gradiente {
+        background-image: radial-gradient(50% 100% at 50% 0%,
+                theme(colors.verde.700) 0%,
+                theme(colors.verde.800) 100%);
+    }
+
+    .btn {
+        @apply border-verde-200 bg-gradient-to-b from-verde-200 to-verde-400 px-5 py-2 border rounded-full text-verde-900 transition hover:contrast-200;
+        box-shadow: 0 1px 4px 1px theme(colors.verde.200 / 25%), inset 0px -1px 2px theme(colors.verde.200);
+    }
+}
