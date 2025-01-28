@@ -750,6 +750,20 @@ video {
   animation: slideIn 0.5s ease-in-out forwards;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1179,6 +1193,10 @@ video {
 
 .animate-3 {
   animation-delay: 300ms;
+}
+
+.animate-4 {
+  animation-delay: 400ms;
 }
 
 .\*\:col-start-1 > * {

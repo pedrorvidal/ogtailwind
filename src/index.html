@@ -28,16 +28,16 @@
             <div class="fixed inset-0 lg:hidden bg-verde-950/40 backdrop-blur-md"></div>
             <ul
                 class="max-lg:z-50 max-lg:absolute lg:flex lg:flex-wrap lg:gap-8 max-lg:p-8 max-lg:divide-y-2 max-lg:divide-white/10 max-lg:w-full text-2xl text-white lg:text-xl">
-                <li class="opacity-0 animate-0 animate-slide-in"><a
-                        class="block max-lg:hover:bg-white/10 lg:px-0 lg:py-2 p-4 lg:hover:underline lg:hover:underline-offset-8"
-                        href="#acomodacoes">Acomodações</a></li>
                 <li class="opacity-0 animate-1 animate-slide-in"><a
                         class="block max-lg:hover:bg-white/10 lg:px-0 lg:py-2 p-4 lg:hover:underline lg:hover:underline-offset-8"
-                        href="#eventos">Eventos</a></li>
+                        href="#acomodacoes">Acomodações</a></li>
                 <li class="opacity-0 animate-2 animate-slide-in"><a
                         class="block max-lg:hover:bg-white/10 lg:px-0 lg:py-2 p-4 lg:hover:underline lg:hover:underline-offset-8"
-                        href="#experiencias">Experiências</a></li>
+                        href="#eventos">Eventos</a></li>
                 <li class="opacity-0 animate-3 animate-slide-in"><a
+                        class="block max-lg:hover:bg-white/10 lg:px-0 lg:py-2 p-4 lg:hover:underline lg:hover:underline-offset-8"
+                        href="#experiencias">Experiências</a></li>
+                <li class="opacity-0 animate-4 animate-slide-in"><a
                         class="block max-lg:hover:bg-white/10 lg:px-0 lg:py-2 p-4 lg:hover:underline lg:hover:underline-offset-8"
                         href="#contato">Contato</a></li>
             </ul>
@@ -55,7 +55,10 @@
     <main class="container">
         <div
             class="relative bg-gradient-to-t from-verde-950/80 px-8 max-sm:px-4 pt-64 max-sm:pt-12 pb-8 rounded-2xl text-white overflow-hidden">
-            <img class="-z-10 absolute inset-0 object-cover size-full" src="./img/floresta.jpg" alt="">
+            <!-- <img class="-z-10 absolute inset-0 object-cover size-full" src="./img/floresta.jpg" alt=""> -->
+            <video id="video" src="./img/video_chuva.mp4"
+                class="-z-10 absolute inset-0 animate-fade-in object-cover size-full" muted width="1280" playsinline
+                autoplay loop height="720"></video>
             <div
                 class="sm:inline-flex flex sm:flex-row flex-col items-start sm:items-center gap-2 sm:gap-8 bg-verde-950/60 sm:bg-verde-950 mb-8 sm:py-1 p-4 sm:pr-1 sm:pl-4 rounded-xl sm:rounded-full">
                 Vagas para dezembro abertas
@@ -327,7 +330,7 @@
                     class="border-2 border-verde-800 bg-verde-800 p-2 rounded-md focus:ring-2 focus:ring-verde-400 text-white placeholder:text-verde-700 focus:outline-none resize-none"
                     placeholder="Mensagem" id="mensagem" name="mensagem" rows="5""></textarea>
             </div>
-            <button class=" inline-block bg-verde-400 px-4 py-2 rounded-full text-verde-900 place-self-start">Enviar email</button>
+            <button class="inline-block bg-verde-400 px-4 py-2 rounded-full text-verde-900 place-self-start">Enviar email</button>
         </form>
     </section>
     <!-- parceiros -->
@@ -377,6 +380,20 @@
 
      </footer>
      <script>
+        const video = document.getElementById('video');
+        const temperatura = document.getElementById('temperatura');
+        const tempo = document.getElementById('tempo');
+        const dia = document.getElementById('dia');
+
+        const random = Math.floor(Math.random() * 10) + 20;
+        temperatura.innerText = `${random}°`;
+        tempo.innerText = random < 25 ? `🌧️ ${random + 5}%` : `🌤️`;
+        const date = new Date();
+        dia.innerHTML = date.toLocaleDateString('pt-BR', { weekday: 'long' })
+            .replace('-feira', '');
+
+        video.src = random < 25 ? `./img/video_chuva.mp4` : `./img/video_sol.mp4`;
+
         const mobileButton = document.getElementById('mobile-button');
         const mobileMenu = document.getElementById('mobile-menu');
 
